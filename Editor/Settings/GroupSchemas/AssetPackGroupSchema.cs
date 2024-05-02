@@ -21,9 +21,9 @@ namespace Khepri.PlayAssetDelivery.Editor.Settings.GroupSchemas
             return new AssetPack
             {
                 DeliveryMode = m_DeliveryMode,
-                CompressionFormatToAssetPackDirectoryPath = new Dictionary<TextureCompressionFormat, string>()
+                CompressionFormatToAssetBundleFilePath = new Dictionary<TextureCompressionFormat, string>()
                 {
-                    {textureCompressionFormat, Path.GetDirectoryName(bundle)}
+                    {textureCompressionFormat, bundle}
                 }
             };
         }
